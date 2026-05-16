@@ -1,19 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Job Hiring Form</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+
+        .container{
+            width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        input, select, textarea{
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        button{
+            width: 100%;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            font-size: 16px;
+        }
+
+        button:hover{
+            background-color: darkgreen;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>heading one</h1>
+    <!-- <h1>heading one</h1>
     <h3>heading two</h3>
     <h3>heading three</h3>
     <h4>heading four</h4>
     <h5>heading five</h5>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quidem consequatur, maxime quae nesciunt minus facilis necessitatibus eum amet perferendis nobis praesentium officiis cumque odio commodi esse? Ipsam, molestias sit.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, sapiente. Totam fugiat aut repellendus enim obcaecati explicabo unde veritatis necessitatibus, ab ducimus, quas hic nihil dignissimos? Assumenda, itaque dolorum! Delectus.</p>
+    
     <img src="/images/pexels-japy-29020349.jpg" alt="" width="300" height="300">
     <img src="/images/pexels-japy-34018284.jpg" alt="" width="300" height="300">
+    <ul type="square">
+        <li>burger</li>
+        <li>pizza</li>
+        <li>pasta</li>
+    </ul>
+    <ol type="I">
+        <li>US</li>
+        <li>UK</li>
+        <li>India</li>
+    </ol> -->
+   <div class="container">
+
+    <h2>Job Application Form</h2>
+
+    <form>
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter phone number" required>
+
+        <label>Position Applying For</label>
+        <select required>
+            <option value="">Select Position</option>
+            <option>Web Developer</option>
+            <option>Graphic Designer</option>
+            <option>Software Engineer</option>
+            <option>UI/UX Designer</option>
+        </select>
+
+        <label>Experience</label>
+        <textarea rows="4" placeholder="Write your experience"></textarea>
+
+        <label>Upload Resume</label>
+        <input type="file">
+
+        <button type="submit">Submit Application</button>
+
+    </form>
+
+</div>
+
+
 </body>
 </html>
